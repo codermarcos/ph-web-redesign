@@ -2,7 +2,7 @@ import { faker } from '@faker-js/faker';
 
 import cookies from '@/authentication/cookies';
 
-import logoutPages from '@/pages/logout';
+import logoutPages from '@/pages/api/logout';
 
 jest.mock('@/authentication/cookies');
 
