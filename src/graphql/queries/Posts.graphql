@@ -1,0 +1,20 @@
+query Posts($after: String){
+  posts(first: 10, after: $after) {
+    edges {
+      node {
+        id
+        name
+        thumbnail {
+          url
+        }
+        tagline
+        votesCount
+      }
+    }
+    totalCount
+    pageInfo {
+      endCursor
+      startCursor
+    }
+  }
+}
