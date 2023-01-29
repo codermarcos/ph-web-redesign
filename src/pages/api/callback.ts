@@ -1,6 +1,8 @@
 /* eslint-disable camelcase */
 import type { NextApiRequest, NextApiResponse } from 'next';
 
+import fetch from 'isomorphic-fetch';
+
 import { accessTokenUri, clientId, redirectUri } from '@/authentication';
 import cookies from '@/authentication/cookies';
 import jwt from '@/authentication/jwt';
