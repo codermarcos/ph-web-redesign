@@ -12,6 +12,13 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
+    "max-lines-per-function": [
+      "error", {
+        "max": 50, 
+        "skipComments": true,
+        "skipBlankLines": true
+      }
+    ],
     "dot-location": [
       "error",
       "property"
