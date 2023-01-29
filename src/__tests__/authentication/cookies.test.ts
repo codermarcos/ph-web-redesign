@@ -4,10 +4,12 @@ import cookiesLib from 'cookie';
 
 import cookies from '@/authentication/cookies';
 
-jest.mock('cookie',
+jest.mock(
+  'cookie',
   () => ({
     serialize: jest.fn(),
-  }));
+  })
+);
 
 describe(
   '[Function] -> authentication/cookies',
@@ -29,13 +31,13 @@ describe(
 
         (cookiesLib.serialize as jest.Mock).mockReturnValue(serializedCookies);
 
-        cookies.store({
-          setHeader: setHeaderSpy,
-        } as any,
-        token);
+        cookies.store(
+          { setHeader: setHeaderSpy } as any,
+          token
+        );
 
-        expect(setHeaderSpy).toHaveBeenCalledWith('Set-Cookie',
-          serializedCookies);
+        expect(setHeaderSpy)
+          .toHaveBeenCalledWith('Set-Cookie', serializedCookies);
 
       }
     );

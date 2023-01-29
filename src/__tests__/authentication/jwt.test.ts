@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { faker } from '@faker-js/faker';
 
 import jwtLib from 'jsonwebtoken';
@@ -21,9 +22,7 @@ describe(
     beforeEach(() => {
 
       jest.resetModules();
-      process.env = {
-        ...env,
-      };
+      process.env = { ...env };
 
     });
 
@@ -46,8 +45,8 @@ describe(
 
         jwt.sign({ access_token } as AuthPayload);
 
-        expect(jwtLib.sign).toHaveBeenCalledWith(access_token,
-          process.env.SECRET_2_LOCAL_TOKENS);
+        expect(jwtLib.sign)
+          .toHaveBeenCalledWith(access_token, process.env.SECRET_2_LOCAL_TOKENS);
 
       }
     );
@@ -66,8 +65,8 @@ describe(
 
         jwt.verify(token);
 
-        expect(jwtLib.verify).toHaveBeenCalledWith(token,
-          process.env.SECRET_2_LOCAL_TOKENS);
+        expect(jwtLib.verify)
+          .toHaveBeenCalledWith(token, process.env.SECRET_2_LOCAL_TOKENS);
 
       }
     );
