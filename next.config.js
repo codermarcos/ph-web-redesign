@@ -3,6 +3,12 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  images: {
+    domains: [
+      'ph-files.imgix.net',
+      'ph-avatars.imgix.net',
+    ],
+  },
   reactStrictMode: true,
   webpack: (config) => {
 

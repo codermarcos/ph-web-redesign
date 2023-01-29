@@ -1,7 +1,9 @@
 query {
   viewer {
     user {
+      profileImage
       username
+      name
     }
   }
 }

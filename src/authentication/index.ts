@@ -11,7 +11,10 @@ const auth = new OAuth2({
   authorizationUri: `${authUrl}/authorize`,
   clientId,
   redirectUri,
-  scopes: ['public'],
+  scopes: [
+    'public',
+    'private',
+  ],
 });
 
 export default auth;
