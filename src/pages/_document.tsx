@@ -38,7 +38,19 @@ export async function getInitialProps(ctx: DocumentContext) {
 
 const DocumentCustom = () => (
   <Html lang="en">
-    <Head />
+    <Head>
+
+      <link
+        href="/favicon.ico"
+        rel="icon"
+      />
+
+      <link
+        href="https://fonts.googleapis.com/css?family=Nunito&display=optional"
+        rel="stylesheet"
+      />
+
+    </Head>
 
     <body>
       <Main />
