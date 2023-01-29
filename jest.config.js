@@ -11,6 +11,9 @@ const customJestConfig = {
   modulePaths: ['<rootDir>'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   testEnvironment: 'jest-environment-jsdom',
+  transform: {
+    '\\.graphql$': '@graphql-tools/jest-transform',
+  },
 };
 
 module.exports = createJestConfig(customJestConfig);
