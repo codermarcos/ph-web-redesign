@@ -7,6 +7,8 @@ import {
   LoginLink,
 } from '@/components/Header/Header.styles';
 
+import NavBar from '@/components/NavBar/NavBar.component';
+
 import QUERY_VIEWER from '@/graphql/queries/Viewer.graphql';
 
 const LazyLoggedHeader = dynamic(
@@ -28,6 +30,8 @@ function Header() {
             </LoginLink>
           )
       }
+
+      <NavBar />
     </HeaderContainer>
   );
 

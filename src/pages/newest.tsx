@@ -6,7 +6,6 @@ import QUERY_POSTS from '@/graphql/queries/Posts.graphql';
 
 import PostsList from '@/components/PostsList/PostsList.component';
 
-
 function Home() {
 
   const { data, fetchMore } = useQuery(QUERY_POSTS);

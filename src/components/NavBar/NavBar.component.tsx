@@ -1,18 +1,36 @@
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
 import {
-  HeaderContainer,
-  LoginLink,
-} from '@/components/Header/Header.styles';
+  Menu,
+  Nav,
+} from '@/components/NavBar/NavBar.style';
 
 function NavBar() {
 
-  return (
-    <nav>
-      <menu>
-        <li />
+  const router = useRouter();
 
-        <li />
-      </menu>
-    </nav>
+  const active = router.asPath === '/'
+    ? 'first'
+    : 'last';
+
+  return (
+    <Nav active={active}>
+      <Menu active={active}>
+        <li>
+          <Link href="/">
+            Popular
+          </Link>
+        </li>
+
+        <li>
+          <Link href="/newest">
+            Newest
+          </Link>
+        </li>
+
+      </Menu>
+    </Nav>
   );
 
 }

@@ -8,6 +8,7 @@ import { colors, sizes } from '@/styles/variables';
 
 export const HeaderContainer = styled.section({
   display: 'flex',
+  gridArea: 'header',
   justifyContent: 'space-between',
   maxWidth: sizes.container,
   padding: padding(sizes.space.default),

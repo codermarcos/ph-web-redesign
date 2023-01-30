@@ -8,22 +8,37 @@ import { colors, sizes } from '@/styles/variables';
 
 export const HeaderContainer = styled.header({
   backgroundColor: colors.whiteDefault,
-  display: 'flex',
+  display: 'grid',
+  gridTemplateAreas: '"marginL header marginR" "marginL navbar marginR"',
+  gridTemplateColumns: `1fr minmax(auto, ${sizes.container}) 1fr`,
+  gridTemplateRows: 'auto auto',
   justifyContent: 'center',
-  padding: padding(sizes.space.default),
+  padding: padding(
+    sizes.space.default,
+    sizes.space.default,
+    0,
+    sizes.space.default,
+  ),
   width: viewWidth(100),
 });
 
 export const LoginLink = styled(Link)({
-  backgroundColor: '#d9552d',
+  alignSelf: 'center',
+  backgroundColor: colors.accent,
   border: border({
-    color: '#b9573c',
+    color: colors.accentDarkness1,
     style: 'solid',
     width: sizes.border.xxs,
   }),
   borderRadius: sizes.borderRadius.default,
   color: colors.whiteDefault,
   cursor: 'pointer',
+  gridArea: 'header',
+  justifySelf: 'center',
   padding: padding(sizes.space.default),
   textDecoration: 'none',
+
+  ':visited': {
+    color: colors.whiteDefault,
+  },
 });
