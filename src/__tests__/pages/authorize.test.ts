@@ -1,3 +1,4 @@
+import type { NextApiRequest, NextApiResponse } from 'next';
 import { faker } from '@faker-js/faker';
 
 import auth from '@/authentication';
@@ -19,7 +20,10 @@ describe(
 
         (auth.code.getUri as jest.Mock).mockReturnValue(redirectUri);
 
-        authorizePages({} as any, { redirect: redirectSpy } as any);
+        authorizePages(
+          {} as unknown as NextApiRequest,
+          { redirect: redirectSpy } as unknown as NextApiResponse,
+        );
 
         expect(redirectSpy).toHaveBeenCalledWith(redirectUri);
 

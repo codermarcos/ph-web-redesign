@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { border, padding, px, viewWidth } from 'csx';
+import { border, padding, viewWidth } from 'csx';
 
 import Link from 'next/link';
 

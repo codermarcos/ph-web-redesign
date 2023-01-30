@@ -1,3 +1,4 @@
+import type { NextApiResponse } from 'next';
 import { faker } from '@faker-js/faker';
 
 import cookiesLib from 'cookie';
@@ -32,7 +33,7 @@ describe(
         (cookiesLib.serialize as jest.Mock).mockReturnValue(serializedCookies);
 
         cookies.store(
-          { setHeader: setHeaderSpy } as any,
+          { setHeader: setHeaderSpy } as unknown as NextApiResponse,
           token
         );
 

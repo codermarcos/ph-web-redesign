@@ -1,3 +1,4 @@
+import type { NextApiRequest, NextApiResponse } from 'next';
 import { faker } from '@faker-js/faker';
 
 import cookies from '@/authentication/cookies';
@@ -19,7 +20,10 @@ describe(
           redirect: jest.fn(),
         };
 
-        logoutPages({} as any, res as any);
+        logoutPages(
+          {} as unknown as NextApiRequest,
+          res as unknown as NextApiResponse,
+        );
 
         expect(cookies.remove).toHaveBeenCalledWith(res);
         expect(res.redirect).toHaveBeenCalledWith('/');
