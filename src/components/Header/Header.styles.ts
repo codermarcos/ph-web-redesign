@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
-import { padding, px, viewWidth } from 'csx';
+import { viewWidth } from 'csx';
 
 import Link from 'next/link';
+import { colors } from '@/styles/variables';
 
 export const HeaderContainer = styled.header({
+  backgroundColor: colors.whiteDefault,
   display: 'flex',
   justifyContent: 'center',
-  padding: padding(px(20), px(20)),
   width: viewWidth(100),
 });
 

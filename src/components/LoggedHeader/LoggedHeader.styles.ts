@@ -2,14 +2,15 @@ import styled from 'styled-components';
 
 import NextImage from 'next/image';
 
-import { percent, px, rotateZ, translateX, translateY } from 'csx';
+import { padding, percent, px, rotateZ, translateX, translateY } from 'csx';
 
-import { colors } from '@/styles/variables';
+import { colors, sizes } from '@/styles/variables';
 
 export const HeaderContainer = styled.section({
   display: 'flex',
   justifyContent: 'space-between',
-  maxWidth: px(920),
+  maxWidth: sizes.container,
+  padding: padding(px(20)),
   width: percent(100),
 });
 

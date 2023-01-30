@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 import { percent, px } from 'csx';
 
-import { colors } from '@/styles/variables';
+import { colors, sizes } from '@/styles/variables';
 
 const GlobalsCss = createGlobalStyle({
   '#__next': {
@@ -22,11 +22,11 @@ const GlobalsCss = createGlobalStyle({
     textDecoration: 'none',
   },
   'body': {
-    backgroundColor: colors.whiteDarkness2,
+    backgroundColor: colors.whiteDarkness1,
     fontFamily: 'Nunito, Segoe UI, Helvetica, Arial',
   },
   'main': {
-    maxWidth: px(920),
+    maxWidth: sizes.container,
     padding: px(20),
     width: percent(100),
   },

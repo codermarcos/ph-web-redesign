@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component] -> components/PostsList should render correct link 1`] = `
+<div>
+  <ol
+    class="sc-af6e6f56-0 hReOgG"
+  >
+    <li
+      class="sc-8132b4de-0 kJObhu"
+    >
+      <a
+        class="sc-8132b4de-4 egGXMv"
+        href=""
+      >
+        <figure
+          class="sc-8132b4de-1 jrYBBL"
+        >
+          <img
+            alt="Image for Alicia Zulauf"
+            class="sc-8132b4de-2 dgPkgN"
+            data-nimg="1"
+            decoding="async"
+            height="96"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Floremflickr.com%2F640%2F480%2Fabstract&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Floremflickr.com%2F640%2F480%2Fabstract&w=96&q=75 1x, /_next/image?url=https%3A%2F%2Floremflickr.com%2F640%2F480%2Fabstract&w=256&q=75 2x"
+            style="color: transparent;"
+            width="96"
+          />
+          <figcaption
+            class="sc-8132b4de-3 eZTIlJ"
+          >
+            <b>
+              Alicia Zulauf
+            </b>
+            <p>
+              et aliquid qui laboriosam nostrum est aliquid earum
+            </p>
+          </figcaption>
+        </figure>
+      </a>
+      <button
+        class="sc-8132b4de-5 cONJLt"
+        type="button"
+      >
+        58
+      </button>
+    </li>
+    <li>
+      loading more...
+    </li>
+  </ol>
+</div>
+`;
