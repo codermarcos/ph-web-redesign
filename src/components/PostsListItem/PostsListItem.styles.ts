@@ -39,7 +39,7 @@ export const ListItemInformations = styled.figcaption({
 
   // eslint-disable-next-line sort-keys
   'b': {
-    color: colors.dark,
+    color: colors.black,
     fontSize: px(36),
     fontWeight: 600,
     lineHeight: px(34),
@@ -47,6 +47,7 @@ export const ListItemInformations = styled.figcaption({
   },
 
   'p': {
+    color: colors.blackLightness1,
     maxWidth: percent(100),
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -59,7 +60,7 @@ export const ListItemLink = styled(Link)({
   borderRadius: sizes.borderRadius.default,
   display: 'block',
   height: px(166),
-  padding: px(20),
+  padding: sizes.space.default,
 });
 
 export const UpVoteButton = styled.button({
@@ -77,7 +78,7 @@ export const UpVoteButton = styled.button({
   height: px(100),
   lineHeight: px(140),
   position: 'absolute',
-  right: px(-20),
+  right: `-${sizes.space.default}`,
   top: percent(50),
   transform: translateY(percent(-50)),
   transition: 'background-position 1s steps(28),' +
@@ -91,7 +92,7 @@ export const UpVoteButton = styled.button({
     border: border({
       color: '#b9573c',
       style: 'solid',
-      width: px(2),
+      width: sizes.border.xxs,
     }),
     color: '#fff',
     transitionDuration: '1s',

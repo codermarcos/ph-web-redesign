@@ -17,8 +17,8 @@ export const sizes = {
 };
 
 export const colors = {
-  dark: '#1d232a',
-  darkLight: '#707f88',
+  black: '#1d232a',
+  blackLightness1: '#707f88',
 
   whiteDarkness1: '#f3f5f7',
   whiteDarkness2: '#d5dadb',
