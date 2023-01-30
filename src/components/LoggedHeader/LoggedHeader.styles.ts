@@ -10,7 +10,7 @@ export const HeaderContainer = styled.section({
   display: 'flex',
   justifyContent: 'space-between',
   maxWidth: sizes.container,
-  padding: padding(px(20)),
+  padding: padding(sizes.space.default),
   width: percent(100),
 });
 
@@ -21,7 +21,7 @@ export const Image = styled(NextImage)({
 export const Input = styled.input({
   backgroundColor: colors.whiteDarkness1,
   border: 'none',
-  borderRadius: px(20),
+  borderRadius: sizes.borderRadius.default,
 });
 
 export const IconMagnificGlass = styled.div({

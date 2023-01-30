@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import { border, percent, px, translateY } from 'csx';
 
-import { colors } from '@/styles/variables';
+import { colors, sizes } from '@/styles/variables';
 
 export const ListItem = styled.li({
   marginBottom: px(20),
@@ -22,7 +22,7 @@ export const ListItemGrid = styled.figure({
 });
 
 export const ListItemImage = styled(Image)({
-  borderRadius: px(20),
+  borderRadius: sizes.borderRadius.default,
   gridArea: 'image',
 });
 
@@ -56,7 +56,7 @@ export const ListItemInformations = styled.figcaption({
 
 export const ListItemLink = styled(Link)({
   backgroundColor: colors.whiteDefault,
-  borderRadius: px(20),
+  borderRadius: sizes.borderRadius.default,
   display: 'block',
   height: px(166),
   padding: px(20),
@@ -68,9 +68,9 @@ export const UpVoteButton = styled.button({
   border: border({
     color: '#eff2f1',
     style: 'solid',
-    width: px(2),
+    width: sizes.border.xxs,
   }),
-  borderRadius: px(20),
+  borderRadius: sizes.borderRadius.default,
   cursor: 'pointer',
   fontSize: px(24),
   fontWeight: 600,

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import { px } from 'csx';
+import { sizes } from '@/styles/variables';
 
 export const List = styled.ol({
   listStyle: 'none',
-  marginRight: px(20),
+  marginRight: sizes.space.default,
 });
