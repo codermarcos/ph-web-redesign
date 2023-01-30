@@ -13,9 +13,7 @@ const fontNunito = Nunito({ subsets: ['latin'] });
 
 function Home() {
 
-  const { data, loading, error, fetchMore } = useQuery(QUERY_POSTS);
-
-  console.log(data);
+  const { data, fetchMore } = useQuery(QUERY_POSTS);
 
   const handleMore = () => {
 

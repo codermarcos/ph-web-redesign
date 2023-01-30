@@ -3,10 +3,10 @@
 exports[`[Component] -> components/Header should render correct header 1`] = `
 <div>
   <header
-    class="sc-f4515888-0 ktRZZz"
+    class="sc-e1990ee5-0 cvCnGB"
   >
     <a
-      class="sc-f4515888-1 fKuwoV"
+      class="sc-e1990ee5-1 kNGFan"
       href="/api/authorize"
     >
       Log in with Product Hunt

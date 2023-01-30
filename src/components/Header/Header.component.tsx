@@ -15,9 +15,7 @@ const LazyLoggedHeader = dynamic(
 
 function Header() {
 
-  const { data, loading, error } = useQuery(QUERY_VIEWER);
-
-  console.log('USER', data);
+  const { data } = useQuery(QUERY_VIEWER);
 
   return (
     <HeaderContainer>
