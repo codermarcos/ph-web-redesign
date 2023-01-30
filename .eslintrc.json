@@ -136,6 +136,7 @@
     "react/forbid-component-props": "off",
     "react/require-default-props": "off",
     "react/no-children-prop": "off",
+    "react/jsx-no-literals": "off",
     "react/jsx-no-bind": "off",
     "no-magic-numbers": "off",
     "no-extra-parens": "off",

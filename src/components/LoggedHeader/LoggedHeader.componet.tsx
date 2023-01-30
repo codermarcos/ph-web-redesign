@@ -34,9 +34,12 @@ function LoggedHeader({ name, profileImage }: UserType) {
         onClick={() => setSearch(!search)}
         type="button"
       >
-        <IconMagnificGlass className={search
-          ? 'active'
-          : ''}
+        <IconMagnificGlass
+          className={
+            search
+              ? 'active'
+              : ''
+          }
         />
       </SearchButton>
     </HeaderContainer>

@@ -17,9 +17,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   /*
    * Here i could just use this if the ph api follows the pattern
    * const payload = await auth.code.getToken(url);
-   *
    */
-  const response = await fetch(accessTokenUri,
+  const response = await fetch(
+    accessTokenUri,
     {
       body: JSON.stringify({
         client_id: clientId,
@@ -30,7 +30,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       }),
       headers: { 'Content-Type': 'application/json' },
       method: 'post',
-    });
+    }
+  );
   const payload = await response.json();
   //
 
