@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component] -> components/Header should render correct header 1`] = `
+<div>
+  <header
+    class="sc-f4515888-0 ktRZZz"
+  >
+    <a
+      class="sc-f4515888-1 fKuwoV"
+      href="/api/authorize"
+    >
+      Log in with Product Hunt
+    </a>
+  </header>
+</div>
+`;

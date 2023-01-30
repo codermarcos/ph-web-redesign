@@ -2,7 +2,7 @@ import { faker } from '@faker-js/faker';
 
 import auth from '@/authentication';
 
-import authorizePages from '@/pages/authorize';
+import authorizePages from '@/pages/api/authorize';
 
 jest.mock('@/authentication');
 
