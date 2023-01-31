@@ -1,5 +1,5 @@
-query Posts($after: String){
-  posts(first: 10, after: $after) {
+query Posts($after: String, $order: PostsOrder = RANKING) {
+  posts(first: 10, after: $after, order: $order) {
     edges {
       node {
         id
