@@ -16,6 +16,7 @@ export const Nav = styled.nav<{ active: string }>(({ active }) => ({
   position: 'relative',
   width: percent(100),
 
+  // eslint-disable-next-line sort-keys
   ':after': {
     backgroundColor: colors.accentDarkness1,
     borderRadius: sizes.borderRadius.default,
@@ -46,6 +47,7 @@ export const Menu = styled.menu({
   paddingBottom: sizes.space.default,
   textAlign: 'center',
 
+  // eslint-disable-next-line sort-keys
   ' a': {
     color: colors.blackLightness1,
   },

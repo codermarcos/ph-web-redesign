@@ -38,6 +38,7 @@ export const LoginLink = styled(Link)({
   padding: padding(sizes.space.default),
   textDecoration: 'none',
 
+  // eslint-disable-next-line sort-keys
   ':visited': {
     color: colors.whiteDefault,
   },

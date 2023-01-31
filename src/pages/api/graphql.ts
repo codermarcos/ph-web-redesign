@@ -41,7 +41,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       : undefined
   );
 
-  if (parseInt(response.headers.get('x-rate-limit-remaining'), 10) < 0)
+  if (parseInt(response.headers.get('x-rate-limit-remaining') as string, 10) < 0)
     cookies.remove(res);
 
   res.json(await response.json());

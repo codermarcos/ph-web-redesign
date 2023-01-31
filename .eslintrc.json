@@ -143,6 +143,7 @@
     "quote-props": "off",
     "no-ternary": "off",
     "no-console": "off",
-    "func-style": "off"
+    "func-style": "off",
+    "no-undefined": "off"
   }
 }
