@@ -1,18 +1,20 @@
 import Head from 'next/head';
 
-import { useQuery } from '@apollo/client';
+import { QueryHookOptions, useQuery } from '@apollo/client';
 
 import QUERY_POSTS from '@/graphql/queries/Posts.graphql';
 
 import PostsList from '@/components/PostsList/PostsList.component';
 
-const NEWEST_QUERY = { variables: { order: 'NEWEST' } };
+const NEWEST_QUERY: QueryHookOptions = {
+  fetchPolicy: 'cache-and-network',
+  initialFetchPolicy: 'no-cache',
+  variables: { order: 'NEWEST' },
+};
 
-function Home() {
+function Newest() {
 
-  const { data, fetchMore } = useQuery(QUERY_POSTS, {
-    ...NEWEST_QUERY,
-  });
+  const { data, fetchMore } = useQuery(QUERY_POSTS, NEWEST_QUERY);
 
   const handleMore = () => {
 
@@ -58,5 +60,5 @@ function Home() {
 
 }
 
-export default Home;
+export default Newest;
 

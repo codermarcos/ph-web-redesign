@@ -1,7 +1,7 @@
 
 import Head from 'next/head';
 
-import { useQuery } from '@apollo/client';
+import { QueryHookOptions, useQuery } from '@apollo/client';
 
 import QUERY_POSTS from '@/graphql/queries/Posts.graphql';
 
@@ -14,7 +14,11 @@ import PostsList from '@/components/PostsList/PostsList.component';
  *
  */
 
-const RANKING_QUERY = { variables: { order: 'RANKING' } };
+const RANKING_QUERY: QueryHookOptions = {
+  fetchPolicy: 'cache-and-network',
+  initialFetchPolicy: 'no-cache',
+  variables: { order: 'RANKING' },
+};
 
 function Home() {
 
