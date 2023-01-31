@@ -45,11 +45,6 @@ const DocumentCustom = () => (
         rel="icon"
       />
 
-      <link
-        href="https://fonts.googleapis.com/css?family=Nunito&display=optional"
-        rel="stylesheet"
-      />
-
     </Head>
 
     <body>

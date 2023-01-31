@@ -16,8 +16,7 @@ const cookies = {
       cookieOptions,
     );
 
-    res.setHeader('Set-Cookie',
-      cookie);
+    res.setHeader('Set-Cookie', cookie);
 
   },
 

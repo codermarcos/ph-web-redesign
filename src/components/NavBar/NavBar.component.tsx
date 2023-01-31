@@ -16,7 +16,7 @@ function NavBar() {
 
   return (
     <Nav active={active}>
-      <Menu active={active}>
+      <Menu>
         <li>
           <Link href="/">
             Popular
@@ -28,7 +28,6 @@ function NavBar() {
             Newest
           </Link>
         </li>
-
       </Menu>
     </Nav>
   );
