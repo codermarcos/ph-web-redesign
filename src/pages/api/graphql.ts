@@ -1,11 +1,11 @@
 /* eslint-disable camelcase */
 import type { NextApiRequest, NextApiResponse } from 'next';
-import fetch from 'isomorphic-fetch';
 
 import cookies from '@/authentication/cookies';
 import jwt from '@/authentication/jwt';
 
 import { accessTokenUri, clientId } from '@/authentication';
+import requestPhApi from '@/services/ph-api';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
 
@@ -18,16 +18,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
      * Here i could just use this if the ph api follows the pattern
      * const payload = await auth.credentials.getToken();
      */
-    const response = await fetch(
+    const response = await requestPhApi(
       accessTokenUri,
       {
-        body: JSON.stringify({
-          client_id: clientId,
-          client_secret: process.env.PH_APP_API_SECRET as string,
-          grant_type: 'client_credentials',
-        }),
-        headers: { 'Content-Type': 'application/json' },
-        method: 'post',
+        client_id: clientId,
+        client_secret: process.env.PH_APP_API_SECRET as string,
+        grant_type: 'client_credentials',
       }
     );
     const payload = await response.json();
@@ -36,19 +32,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   }
 
-  const response = await fetch(`${process.env.PH_API_HOST}v2/api/graphql`,
-    {
-      body: JSON.stringify(req.body),
-      headers: {
-        'Content-Type': 'application/json',
-        ...(
-          typeof token === 'string' && token.length
-            ? { Authorization: `Bearer ${token}` }
-            : {}
-        ),
-      },
-      method: 'post',
-    });
+  const response = await requestPhApi(
+    `${process.env.PH_API_HOST}v2/api/graphql`,
+    req.body,
+    typeof token === 'string' && token.length
+      ? `Bearer ${token}`
+      : undefined
+  );
 
   res.json(await response.json());
 

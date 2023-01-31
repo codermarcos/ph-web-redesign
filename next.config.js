@@ -3,6 +3,9 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  env: {
+    HOST: process.env.HOST,
+  },
   images: {
     domains: [
       'ph-files.imgix.net',
