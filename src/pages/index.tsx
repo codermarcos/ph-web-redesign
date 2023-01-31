@@ -6,15 +6,17 @@ import QUERY_POSTS from '@/graphql/queries/Posts.graphql';
 
 import PostsList from '@/components/PostsList/PostsList.component';
 
+const RANKING_QUERY = { variables: { order: 'RANKING' } };
 
 function Home() {
 
-  const { data, fetchMore } = useQuery(QUERY_POSTS);
+  const { data, fetchMore } = useQuery(QUERY_POSTS, RANKING_QUERY);
 
   const handleMore = () => {
 
     fetchMore({
       variables: {
+        ...RANKING_QUERY.variables,
         after: data.posts.pageInfo.endCursor,
       },
     });

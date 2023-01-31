@@ -6,14 +6,19 @@ import QUERY_POSTS from '@/graphql/queries/Posts.graphql';
 
 import PostsList from '@/components/PostsList/PostsList.component';
 
+const NEWEST_QUERY = { variables: { order: 'NEWEST' } };
+
 function Home() {
 
-  const { data, fetchMore } = useQuery(QUERY_POSTS);
+  const { data, fetchMore } = useQuery(QUERY_POSTS, {
+    ...NEWEST_QUERY,
+  });
 
   const handleMore = () => {
 
     fetchMore({
       variables: {
+        ...NEWEST_QUERY.variables,
         after: data.posts.pageInfo.endCursor,
       },
     });
