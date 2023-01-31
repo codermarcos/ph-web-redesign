@@ -5,6 +5,7 @@ const createJestConfig = nextJest({
 });
 
 const customJestConfig = {
+  coveragePathIgnorePatterns: ['<rootDir>/src/(.*)/*.graphql'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
   },

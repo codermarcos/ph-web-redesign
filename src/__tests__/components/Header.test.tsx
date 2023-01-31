@@ -1,16 +1,25 @@
 import { RenderResult, render } from '@testing-library/react';
 import { MockedProvider } from '@apollo/client/testing';
 import { faker } from '@faker-js/faker';
+import { useRouter } from 'next/router';
 
 import QUERY_VIEWER from '@/graphql/queries/Viewer.graphql';
 
 import Header from '@/components/Header/Header.component';
 
+jest.mock(
+  'next/router',
+  () => ({
+    useRouter: jest.fn(),
+  })
+);
+
+
 faker.seed(1);
 
 const user = {
   name: faker.name.fullName(),
-  profilePhoto: faker.image.avatar(),
+  profileImage: faker.image.avatar(),
 };
 
 const mocks = [
@@ -36,6 +45,8 @@ describe(
     beforeEach(
       () => {
 
+        (useRouter as jest.Mock).mockReturnValue({ asPath: '/' });
+
         wrapper = render(
           <MockedProvider mocks={mocks}>
             <Header />
@@ -53,6 +64,7 @@ describe(
 
       }
     );
+
 
   }
 );

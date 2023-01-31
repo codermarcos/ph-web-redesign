@@ -12,7 +12,7 @@ import NavBar from '@/components/NavBar/NavBar.component';
 import QUERY_VIEWER from '@/graphql/queries/Viewer.graphql';
 
 const LazyLoggedHeader = dynamic(
-  () => import('@/components/LoggedHeader/LoggedHeader.componet'),
+  () => import('@/components/LoggedHeader/LoggedHeader.component'),
 );
 
 function Header() {

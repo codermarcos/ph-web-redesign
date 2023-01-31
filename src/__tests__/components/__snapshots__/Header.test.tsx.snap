@@ -3,14 +3,37 @@
 exports[`[Component] -> components/Header should render correct header 1`] = `
 <div>
   <header
-    class="sc-e1990ee5-0 cvCnGB"
+    class="sc-b94398a9-0 iSVRxz"
   >
     <a
-      class="sc-e1990ee5-1 kNGFan"
+      class="sc-b94398a9-1 hqLtOh"
+      data-test-id="button-login"
       href="/api/authorize"
     >
       Log in with Product Hunt
     </a>
+    <nav
+      class="sc-ef123523-0 hfsmXA"
+    >
+      <menu
+        class="sc-ef123523-1 ceKGjd"
+      >
+        <li>
+          <a
+            href="/"
+          >
+            Popular
+          </a>
+        </li>
+        <li>
+          <a
+            href="/newest"
+          >
+            Newest
+          </a>
+        </li>
+      </menu>
+    </nav>
   </header>
 </div>
 `;

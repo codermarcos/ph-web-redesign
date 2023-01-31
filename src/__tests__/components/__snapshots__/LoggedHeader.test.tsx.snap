@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component] -> components/LoggedHeader should render correct header 1`] = `
+<div>
+  <section
+    class="sc-a31e1884-0 bBqNYt"
+  >
+    <img
+      alt="Winifred Reichel Sr."
+      class="sc-a31e1884-1 eRMiTh"
+      data-nimg="1"
+      decoding="async"
+      height="74"
+      loading="lazy"
+      src="/_next/image?url=https%3A%2F%2Fcloudflare-ipfs.com%2Fipfs%2FQmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye%2Favatar%2F377.jpg&w=256&q=75"
+      srcset="/_next/image?url=https%3A%2F%2Fcloudflare-ipfs.com%2Fipfs%2FQmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye%2Favatar%2F377.jpg&w=96&q=75 1x, /_next/image?url=https%3A%2F%2Fcloudflare-ipfs.com%2Fipfs%2FQmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye%2Favatar%2F377.jpg&w=256&q=75 2x"
+      style="color: transparent;"
+      width="74"
+    />
+    <input
+      class="sc-a31e1884-2 bYKFjv"
+      type="search"
+    />
+    <button
+      class="sc-a31e1884-4 ktTJOl"
+      type="button"
+    >
+      <div
+        class="sc-a31e1884-3 fuKxSY"
+      />
+    </button>
+  </section>
+</div>
+`;

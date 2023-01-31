@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component] -> components/NavBar should render correct header 1`] = `
+<div>
+  <nav
+    class="sc-ef123523-0 hfsmXA"
+  >
+    <menu
+      class="sc-ef123523-1 ceKGjd"
+    >
+      <li>
+        <a
+          href="/"
+        >
+          Popular
+        </a>
+      </li>
+      <li>
+        <a
+          href="/newest"
+        >
+          Newest
+        </a>
+      </li>
+    </menu>
+  </nav>
+</div>
+`;
