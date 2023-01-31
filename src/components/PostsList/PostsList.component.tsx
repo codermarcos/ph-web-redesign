@@ -30,7 +30,7 @@ function PostsList({ edges, onLoadMore }: Props) {
   );
 
   return (
-    <List>
+    <List data-test-id="post-list">
       {
         edges.map(
           ({ node }) => (
