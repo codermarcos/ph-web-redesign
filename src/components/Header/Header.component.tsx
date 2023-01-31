@@ -25,7 +25,10 @@ function Header() {
         data && data.viewer
           ? (<LazyLoggedHeader {...data.viewer.user} />)
           : (
-            <LoginLink href="/api/authorize">
+            <LoginLink
+              data-test-id="button-login"
+              href="/api/authorize"
+            >
               Log in with Product Hunt
             </LoginLink>
           )
