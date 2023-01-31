@@ -12,6 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const cookie = cookies.retrive(req);
   let token = jwt.verify(cookie);
 
+
   if (typeof token !== 'string' || token.length === 0) {
 
     /*
@@ -39,6 +40,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       ? `Bearer ${token}`
       : undefined
   );
+
+  if (parseInt(response.headers.get('x-rate-limit-remaining'), 10) < 0)
+    cookies.remove(res);
 
   res.json(await response.json());
 
