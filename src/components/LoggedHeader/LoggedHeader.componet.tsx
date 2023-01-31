@@ -5,7 +5,7 @@ import {
   Input,
   SearchButton,
 } from '@/components/LoggedHeader/LoggedHeader.styles';
-import { useState } from 'react';
+import { memo, useState } from 'react';
 
 export type UserType = {
   name: string;
@@ -47,4 +47,4 @@ function LoggedHeader({ name, profileImage }: UserType) {
 
 }
 
-export default LoggedHeader;
+export default memo(LoggedHeader);
