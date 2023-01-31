@@ -33,6 +33,27 @@ git clone git@github.com:codermarcos/product-hunt.git
 npm install
 ```
 
+3. Set up the following envs or create a `.env.local` file in root folder with this variables:
+
+```dosini
+PORT                 =3000
+ENABLE_HTTPS         =true
+SECRET_2_LOCAL_TOKENS=segredo
+
+DATA_EMAIL   =<product hunt user email used to login at grid>
+DATA_PASSWORD=<product user password to login at grid>
+
+PH_API_HOST        =<host os product hunt api .:"https://api.producthunt.com/">
+PH_APP_API_KEY     =<api key created in product hunt site>
+PH_APP_API_SECRET  =<api secret created in product hunt site>
+PH_APP_REDIRECT_URI=<uri of this app used after login at product hunt api .:"https://localhost:3000/api/callback">
+```
+
+> To create `PH_APP_API_KEY` and `PH_APP_API_SECRET` just access [here][ph-api-key] and Add an application
+
+> You can pass during execution
+
+
 ## ▶️ Run project
 
 1. To **run** you need to have [NodeJS][node-download] installed and runned `🔨 Project setup`:
@@ -45,7 +66,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### ⬆️ Deployment
 
-1. Declare necessary environments:
+1. Declare necessary environments to deploy:
 
 To Unix:
 
@@ -86,12 +107,12 @@ CDK will create an output of the endpoint URL.
 
 This project contains all code for all archeteture, at the following folders:
 
+* `./authentication` has code used to control cookie and token
+* `./graphql` has code to apollo client and graphql queries
+* `./services` has code with api calls
 * `./components` has code all code of frontend
-  * `/atoms` has most **small components** in the application `ex.: **Input**, **Button** etc...`
-  * `/icons` has svgs components to icons
-  * `/molecules` has components that represents a group of **atom components**
-  * `/organisms` has components that represents a group of **molecule components**
 * `./pages` has files with names based on route how can you see at [Next Documentation][next-doc-routes]
+* `./styles` has code with global styles and enviroment variables
 
 
 ## 📖 Learn More
@@ -137,3 +158,4 @@ This project exists thanks to all these people.
 [next-doc-learn]: https://nextjs.org/learn
 [next-doc-routes]: https://nextjs.org/docs/routing/introduction
 
+[ph-api-key]: https://api.producthunt.com/v2/oauth/applications
