@@ -1,7 +1,5 @@
 import type { AppProps } from 'next/app';
 
-import { useMemo } from 'react';
-
 import { Nunito } from '@next/font/google';
 
 import { ApolloProvider } from '@apollo/client';
@@ -17,13 +15,11 @@ const fontNunito = Nunito({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }: AppProps) {
 
-  const memoHeader = useMemo(() => <Header />, []);
-
   return (
     <ApolloProvider client={apolloClient}>
       <GlobalsCss />
 
-      {memoHeader}
+      <Header />
 
       <main className={fontNunito.className}>
         <Component {...pageProps} />
