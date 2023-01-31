@@ -1,3 +1,4 @@
+
 import Head from 'next/head';
 
 import { useQuery } from '@apollo/client';
@@ -5,6 +6,13 @@ import { useQuery } from '@apollo/client';
 import QUERY_POSTS from '@/graphql/queries/Posts.graphql';
 
 import PostsList from '@/components/PostsList/PostsList.component';
+
+/*
+ * TODO: Implement SSR query to make server-side query with cache rehydration
+ * https://medium.com/@ahsan-ali-mansoor/
+ * apollo-client-cache-rehydration-in-next-js-d1d7c693699e
+ *
+ */
 
 const RANKING_QUERY = { variables: { order: 'RANKING' } };
 
