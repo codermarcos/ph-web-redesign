@@ -1,0 +1,155 @@
+{
+  "data": {
+    "posts": {
+      "edges": [
+        {
+          "node": {
+            "id": "375989",
+            "name": "Live Video Calling SDK by Dyte",
+            "thumbnail": {
+              "url": "https://ph-files.imgix.net/f8f46665-9ae5-4825-ba82-840625f2ab0e.gif?auto=format",
+              "__typename": "Media"
+            },
+            "tagline": "Integrate into your product within minutes",
+            "votesCount": 854,
+            "__typename": "Post"
+          },
+          "__typename": "PostEdge"
+        },
+        {
+          "node": {
+            "id": "376810",
+            "name": "Getgud.io",
+            "thumbnail": {
+              "url": "https://ph-files.imgix.net/ca333d50-0716-4b00-a026-9acd62963218.png?auto=format",
+              "__typename": "Media"
+            },
+            "tagline": "Making online games toxic free",
+            "votesCount": 415,
+            "__typename": "Post"
+          },
+          "__typename": "PostEdge"
+        },
+        {
+          "node": {
+            "id": "377157",
+            "name": "LINER AI",
+            "thumbnail": {
+              "url": "https://ph-files.imgix.net/edff60a0-a1c4-4a32-ac57-15351a2ba1b4.png?auto=format",
+              "__typename": "Media"
+            },
+            "tagline": "A trustworthy ChatGPT search assistant",
+            "votesCount": 385,
+            "__typename": "Post"
+          },
+          "__typename": "PostEdge"
+        },
+        {
+          "node": {
+            "id": "376474",
+            "name": "Zoom Timer BlueSky Apps",
+            "thumbnail": {
+              "url": "https://ph-files.imgix.net/ddbafc0f-9d76-4f8d-aaf4-c6c699d0f6f4.gif?auto=format",
+              "__typename": "Media"
+            },
+            "tagline": "Timer shared directly in your Zoom meetings",
+            "votesCount": 182,
+            "__typename": "Post"
+          },
+          "__typename": "PostEdge"
+        },
+        {
+          "node": {
+            "id": "376335",
+            "name": "littlecook",
+            "thumbnail": {
+              "url": "https://ph-files.imgix.net/7004ebf2-6de1-4496-9b6f-92638f76a4dc.gif?auto=format",
+              "__typename": "Media"
+            },
+            "tagline": "Turn unused ingredients into delicious new dishes",
+            "votesCount": 187,
+            "__typename": "Post"
+          },
+          "__typename": "PostEdge"
+        },
+        {
+          "node": {
+            "id": "377091",
+            "name": "PriceWell Bubble Plugin for Stripe",
+            "thumbnail": {
+              "url": "https://ph-files.imgix.net/ed4c6ea9-ace2-4fbd-808e-ab9dc88f3c53.gif?auto=format",
+              "__typename": "Media"
+            },
+            "tagline": "No fuss, no-code Stripe subscriptions for Bubble apps",
+            "votesCount": 202,
+            "__typename": "Post"
+          },
+          "__typename": "PostEdge"
+        },
+        {
+          "node": {
+            "id": "376934",
+            "name": "Delibr AI",
+            "thumbnail": {
+              "url": "https://ph-files.imgix.net/33bd3c8b-284f-49d9-b275-dc2b1fcf5709.gif?auto=format",
+              "__typename": "Media"
+            },
+            "tagline": "AI-assisted end-to-end product management platform",
+            "votesCount": 209,
+            "__typename": "Post"
+          },
+          "__typename": "PostEdge"
+        },
+        {
+          "node": {
+            "id": "377162",
+            "name": "ChatGPT Famous Resumes",
+            "thumbnail": {
+              "url": "https://ph-files.imgix.net/d69a2c7e-4594-4d3e-8919-4c47acf06cac.png?auto=format",
+              "__typename": "Media"
+            },
+            "tagline": "1000+ AI generated resumes of famous people",
+            "votesCount": 168,
+            "__typename": "Post"
+          },
+          "__typename": "PostEdge"
+        },
+        {
+          "node": {
+            "id": "377110",
+            "name": "Kayyo",
+            "thumbnail": {
+              "url": "https://ph-files.imgix.net/ef2f6888-d537-4611-82e3-47f3945d0325.jpeg?auto=format",
+              "__typename": "Media"
+            },
+            "tagline": "AI-powered personal MMA trainer",
+            "votesCount": 162,
+            "__typename": "Post"
+          },
+          "__typename": "PostEdge"
+        },
+        {
+          "node": {
+            "id": "376853",
+            "name": "Terrastruct",
+            "thumbnail": {
+              "url": "https://ph-files.imgix.net/f1076944-a822-4ec5-8993-827adb85d9fd.png?auto=format",
+              "__typename": "Media"
+            },
+            "tagline": "The diagramming tool for developers",
+            "votesCount": 150,
+            "__typename": "Post"
+          },
+          "__typename": "PostEdge"
+        }
+      ],
+      "totalCount": 10,
+      "pageInfo": {
+        "endCursor": "MTA",
+        "startCursor": "MQ",
+        "__typename": "PageInfo"
+      },
+      "__typename": "PostConnection"
+    }
+  }
+}

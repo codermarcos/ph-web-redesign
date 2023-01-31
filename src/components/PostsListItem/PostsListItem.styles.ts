@@ -8,14 +8,14 @@ import { border, percent, px, translateY } from 'csx';
 import { colors, sizes } from '@/styles/variables';
 
 export const ListItem = styled.li({
-  marginBottom: px(20),
+  marginBottom: sizes.space.default,
   position: 'relative',
 });
 
 export const ListItemGrid = styled.figure({
   alignItems: 'center',
   display: 'grid',
-  gridGap: px(20),
+  gridGap: sizes.space.default,
   gridTemplateAreas: '"image information"',
   height: percent(100),
   justifyContent: 'left',
@@ -90,7 +90,7 @@ export const UpVoteButton = styled.button({
   ':focus': {
     backgroundPosition: '-2800px 0',
     border: border({
-      color: '#b9573c',
+      color: colors.accentDarkness1,
       style: 'solid',
       width: sizes.border.xxs,
     }),
