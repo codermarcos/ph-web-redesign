@@ -11,6 +11,7 @@ const nextConfig = {
       'ph-files.imgix.net',
       'ph-avatars.imgix.net',
     ],
+    unoptimized: true,
   },
   reactStrictMode: true,
   webpack: (config) => {
